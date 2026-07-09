@@ -24,7 +24,7 @@ function posNegZero(number) {
         console.log("The given number ", number, " is negative");
     }
     else {
-        console.log("The given number is", number);
+        console.log("The given number ", number, "is neutral");
     }
 }
 
