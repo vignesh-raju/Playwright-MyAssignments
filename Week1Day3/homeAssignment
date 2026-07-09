@@ -1,0 +1,61 @@
+//Odd or Even
+
+function isOddOrEven(number){
+
+    if(number % 2 == 0){
+        console.log("The given number ",number," is even");
+        return
+    }else{
+        console.log("The given number ",number," is odd");
+        return
+    }
+}
+isOddOrEven(10)
+isOddOrEven(119)
+isOddOrEven(10001)
+
+
+//number is positive, negative, or zero
+
+function posNegZero(number) {
+    if (number > 0) {
+        console.log("The given number ", number, " is positive");
+    } else if (number < 0) {
+        console.log("The given number ", number, " is negative");
+    }
+    else {
+        console.log("The given number is", number);
+    }
+}
+
+posNegZero(100000)
+posNegZero(-2300)
+posNegZero(0)
+
+
+//launchBrowser
+
+function launchBrowser(browserName) {
+    if (browserName == "chrome") {
+        console.log("The given browser name is ", browserName);
+    } else {
+        console.log("The given browser name is not chrome");
+    }
+}
+function runTests(testType) {
+    switch (testType) {
+        case "Regression":
+            console.log("The given testType is regression");
+            break;
+        case "Sanity":
+            console.log("The given testType is sanity");    
+            break;
+        default:
+            console.log("The given testType is smoke");
+            break;
+    }
+}
+launchBrowser("chrome")
+launchBrowser("edge")
+runTests("smoke")
+runTests("Sanity")
