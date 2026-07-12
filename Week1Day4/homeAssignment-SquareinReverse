@@ -1,0 +1,10 @@
+// Square in Reverse
+
+function squareInReverse(number) { 
+
+for (let i = number; i >= 1; i--) {
+    let square = (i * i)
+    console.log("The square of ", i , " is ", square); 
+}
+}
+squareInReverse(10);
